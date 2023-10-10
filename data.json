@@ -1,0 +1,35 @@
+{
+ "Washington/Reagan National Airport, DC (KDCA)":{
+  "Today":"Mostly sunny, with a high near 69. Light southwest wind becoming west 5 to 10 mph in the morning",
+  "Tonight":"Mostly clear, with a low around 45. Light and variable wind",
+  "Wednesday":"Sunny, with a high near 70. West wind 3 to 7 mph",
+  "WednesdayNight":"Partly cloudy, with a low around 48. South wind around 5 mph becoming calm  in the evening",
+  "Thursday":"Sunny, with a high near 75. Calm wind becoming southwest around 6 mph in the afternoon",
+  "ThursdayNight":"Partly cloudy, with a low around 5",
+  "Friday":"Mostly sunny, with a high near 7",
+  "FridayNight":"A chance of rain.  Mostly cloudy, with a low around 56. Chance of precipitation is 50",
+  "Saturday":"Rain.  High near 66. Chance of precipitation is 80"
+ },
+ "Farmingdale - Republic Airport (KFRG)":{
+  "Today":"Mostly sunny, with a high near 66. Southwest wind 6 to 10 mph, with gusts as high as 21 mph",
+  "Tonight":"Partly cloudy, with a low around 51. West wind 3 to 6 mph",
+  "Wednesday":"Sunny, with a high near 67. Southwest wind 5 to 10 mph",
+  "WednesdayNight":"Mostly clear, with a low around 52. West wind around 7 mph",
+  "Thursday":"Mostly sunny, with a high near 69. Southwest wind 5 to 10 mph",
+  "ThursdayNight":"Mostly cloudy, with a low around 5",
+  "Friday":"Mostly sunny, with a high near 6",
+  "FridayNight":"A 30 percent chance of rain after 2am.  Mostly cloudy, with a low around 5",
+  "Saturday":"Rain likely, mainly after 2pm.  Mostly cloudy, with a high near 62. Chance of precipitation is 70"
+ },
+ "Rome, R. B. Russell Airport (KRMG)":{
+  "Today":"Sunny, with a high near 78. Southwest wind 5 to 15 mph, with gusts as high as 20 mph",
+  "Tonight":"Mostly cloudy, with a low around 55. West wind around 5 mph becoming north after midnight",
+  "Wednesday":"Cloudy, with a high near 72. Calm wind becoming southeast around 5 mph in the afternoon",
+  "WednesdayNight":"A 30 percent chance of showers, mainly after 11pm.  Mostly cloudy, with a low around 56. South wind 5 to 10 mph becoming east after midnight",
+  "Thursday":"A 30 percent chance of showers, mainly after 2pm.  Mostly cloudy, with a high near 68. East wind 10 to 15 mph, with gusts as high as 20 mph",
+  "ThursdayNight":"Showers likely, mainly after 2am.  Mostly cloudy, with a low around 61. Chance of precipitation is 60",
+  "Friday":"Showers likely, mainly before 8am.  Cloudy, with a high near 69. Chance of precipitation is 60",
+  "FridayNight":"A 50 percent chance of showers.  Mostly cloudy, with a low around 6",
+  "Saturday":"Mostly sunny, with a high near 7"
+ }
+}
