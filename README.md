@@ -107,3 +107,9 @@ db.myCollection.insertMany([
 ])
 ```
 After successfully entering data, MongoDB will automatically add the `_id` field with an ObjectId value to each document.
+
+To read all documents in the collection, pass an empty document as the query filter parameter to the find method. The query filter parameter determines the select criteria.
+```
+use myNewDatabase
+db.myCollection.find()
+```
