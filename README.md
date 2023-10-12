@@ -15,7 +15,7 @@ You need `Mongodb` distributed via `Docker` image. To download Docker Desktop fo
 
 Link: https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
-After successful installation, run `docker` application and do the following steps:
+After successful installation, run `docker` application and do the following steps in `Command Prompt`:
 
 - To start a mongo server instance, run the following command:
 ```
@@ -46,9 +46,9 @@ pages = [
     "https://forecast.weather.gov/MapClick.php?x=155&y=202&site=okx&zmx=&zmy=&map_x=155&map_y=202"
     ]
 ```
-the example contains two links with various cities.
+The example contains two links with various cities. Then run the `main.py` file
 
-Then run the `main.py` file. After running, the `data.json` containing data from the The National Weather Service (NWS) website will appear.
+After running, the `data.json` containing data from the The National Weather Service (NWS) website will appear. This is an example:
 ```
 {
  "Washington/Reagan National Airport, DC (KDCA)":{
@@ -76,7 +76,7 @@ Then run the `main.py` file. After running, the `data.json` containing data from
 }
 ```
 
-Back to mongodb container, insert multiple document from `data.json` into a collection in database. For example:
+Back to mongodb container running in `Command Prompt`, insert multiple document from `data.json` into a collection in database. For example:
 ```
 use myNewDatabase
 db.myCollection.insertMany([
