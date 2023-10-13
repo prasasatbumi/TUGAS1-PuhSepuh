@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 def crawl(pages):
 
-  data = {}
+  data = []
 
   for i in pages:
     # request page
@@ -34,7 +34,9 @@ def crawl(pages):
       value[periods[i]]=desc[i]
 
     # insert to data place:value
-    data[key]=value
+    temp_data = {}
+    temp_data[key]=value
+    data.append(temp_data)
 
   # Serializing json
   json_object = json.dumps(data, indent = 1,separators=(',', ':'))
