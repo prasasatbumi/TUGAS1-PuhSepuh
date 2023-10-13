@@ -21,13 +21,13 @@ After successful installation, run `docker` application and do the following ste
 ```
 docker run --name some-mongo -d mongo:latest
 ```
-where some-mongo is the name you want to assign to your container.
+where `some-mongo` is the name you want to assign to your container.
 
-- To get a bash shell inside your `mongo` container, run the following command:
+- To get a bash shell inside your `mongodb` container, run the following command:
 ```
 docker exec -it some-mongo bash
 ```
-- To connect to a MongoDB deployment running on localhost with default port 27017, run the following command:
+- To connect to a mongodb deployment running on localhost with default port 27017, run the following command:
 ```
 mongosh
 ```
@@ -110,10 +110,40 @@ db.myCollection.insertMany([
     }
 ])
 ```
-After successfully entering data, MongoDB will automatically add the `_id` field with an ObjectId value to each document.
+After successfully entering data, mongodb will automatically add the `_id` field with an ObjectId value to each document.
 
-To read all documents in the collection, pass an empty document as the query filter parameter to the find method. The query filter parameter determines the select criteria.
+To read all documents in the collection, pass an empty document as the query filter parameter to the find method. The query filter parameter determines the select criteria. For example:
 ```
 use myNewDatabase
 db.myCollection.find()
+[
+  {
+    _id: ObjectId("6528e4c7b33e2442d817cea1"),
+    'Washington/Reagan National Airport, DC (KDCA)': {
+      Overnight: 'Partly cloudy, with a low around 51. Calm wind',
+      Friday: 'Sunny, with a high near 70. Northeast wind around 7 mph',
+      FridayNight: 'Mostly clear, with a low around 51. Light northeast wind',
+      Saturday: 'Showers, with thunderstorms also possible after 5pm.  High near 63. Southeast wind 5 to 9 mph.  Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch, except higher amounts possible in thunderstorms',
+      SaturdayNight: 'Showers and possibly a thunderstorm.  Low around 50. North wind 6 to 8 mph.  Chance of precipitation is 90',
+      Sunday: 'Showers likely, mainly before 8am.  Mostly cloudy, with a high near 60. Chance of precipitation is 60',
+      SundayNight: 'Mostly cloudy, with a low around 4',
+      Monday: 'Partly sunny, with a high near 5',
+      MondayNight: 'A chance of showers after 2am.  Mostly cloudy, with a low around 48. Chance of precipitation is 30'
+    }
+  },
+  {
+    _id: ObjectId("6528e4c7b33e2442d817cea2"),
+    'Farmingdale - Republic Airport (KFRG)': {
+      Overnight: 'Clear, with a steady temperature around 52. North wind around 8 mph',
+      Friday: 'Sunny, with a high near 65. Northwest wind 8 to 10 mph',
+      FridayNight: 'Increasing clouds, with a low around 48. North wind around 6 mph',
+      Saturday: 'Rain likely, mainly after 2pm.  Mostly cloudy, with a high near 60. Northwest wind 5 to 7 mph.  Chance of precipitation is 60%. New precipitation amounts between a quarter and half of an inch possible',
+      SaturdayNight: 'Rain likely.  Cloudy, with a low around 49. Northeast wind 7 to 11 mph.  Chance of precipitation is 70%. New precipitation amounts between a half and three quarters of an inch possible',
+      Sunday: 'A 30 percent chance of rain before 2pm.  Mostly cloudy, with a high near 6',
+      SundayNight: 'Mostly cloudy, with a low around 5',
+      Monday: 'Mostly cloudy, with a high near 6',
+      MondayNight: 'A 30 percent chance of rain.  Mostly cloudy, with a low around 5'
+    }
+  }
+]
 ```
