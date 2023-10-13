@@ -34,7 +34,7 @@ mongosh
 - Create a new database. For example, the following commands create both the database `myNewDatabase` and the collection `myCollection`
 ```
 use myNewDatabase
-db.createCollection(myCollection)
+db.createCollection("myCollection")
 ```
 
 ## Running the tests
