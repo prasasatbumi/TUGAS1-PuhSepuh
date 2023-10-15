@@ -155,7 +155,7 @@ db.myCollection.deleteOne({_id: ObjectId()});
 
 docker exec -it some-mongo bash
 use yourDatabaseName
-db.yourCollectionName.remove({ _id: ObjectId("6528e4c7b33e2442d817cea2") });
+db.yourCollectionName.deleteOne({ _id: ObjectId("6528e4c7b33e2442d817cea2") });
 
 then, the the result is :
 { acknowledged: true, deletedCount: 1 }
