@@ -1,5 +1,5 @@
 # TUGAS1-PuhSepuh
-**Project Description**
+This project focuses on developing a comprehensive guide for dockworkers on setting up and utilizing a MongoDB container, an essential component of modern data management, and implementing a web scraping application to collect semi-structured data from the National Weather Service (NWS) website. The goal is to facilitate efficient data storage and retrieval processes while extracting valuable weather-related information.
 
 ## Getting Started
 This guide shows you how to use Mongodb container in docker and running a crawler application created to obtain semi-structured data on The National Weather Service (NWS) website.
