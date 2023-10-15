@@ -147,3 +147,20 @@ db.myCollection.find()
   }
 ]
 ```
+
+To delete one documents in the collection, pass an empty document as the query filter parameter to the find method. The query filter parameter determines the select criteria. For example:
+```
+use myNewDatabase
+db.myCollection.deleteOne({_id: ObjectId()});
+
+docker exec -it some-mongo bash
+use yourDatabaseName
+db.yourCollectionName.remove({ _id: ObjectId("6528e4c7b33e2442d817cea2") });
+
+then, the the result is :
+{ acknowledged: true, deletedCount: 1 }
+
+If that command pop out, then the data is successfully deleted. you can confirm it with command find()
+
+
+Remember to replace yourDatabaseName, yourCollectionName, and the specific _id value as needed for your use case. Be cautious when deleting data, especially in a production environment, as there is no easy way to recover deleted documents. Always ensure you have proper backups or data retention policies in place.
