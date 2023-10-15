@@ -158,6 +158,6 @@ then, the the result is :
 ```
 { acknowledged: true, deletedCount: 1 }
 ```
-If that command pop out, then the data is successfully deleted. you can confirm it with command find()
+If that command pop out, then the data is successfully deleted. you can confirm it with command `find()`
 
 Remember to replace yourDatabaseName, yourCollectionName, and the specific _id value as needed for your use case. Be cautious when deleting data, especially in a production environment, as there is no easy way to recover deleted documents. Always ensure you have proper backups or data retention policies in place.
