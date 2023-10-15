@@ -153,7 +153,6 @@ To delete one documents in the collection, pass an empty document as the query f
 use myNewDatabase
 db.myCollection.deleteOne({_id: ObjectId()});
 
-docker exec -it some-mongo bash
 use yourDatabaseName
 db.yourCollectionName.deleteOne({ _id: ObjectId("6528e4c7b33e2442d817cea2") });
 
